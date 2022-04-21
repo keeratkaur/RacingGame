@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#game {
+  height: 500px;
+  width: 400px;
+  border: 2px solid black;
+  margin: 1rem auto;
+  background-image: url("images/bg.jpg");
+  background-size: contain;
+  overflow: hidden;
+}
+
+#blueCar {
+  height: 100px;
+  width: 130px;
+  background-color: black;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  animation: move 1s linear infinite;
+}
+
+#blueCar img {
+  height: 100px;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 501px;
+  }
+}
+
+#RacingCar {
+  height: 100px;
+  width: 130px;
+  background-color: red;
+  position: relative;
+  top: 250px;
+  left: 130px;
+  text-align: center;
+}
+
+#RacingCar img {
+  height: 100px;
+}
+
+/*Game over
+*/
+#score {
+  font-size: 2.2rem;
+  color: #27496D;
+text-align: center;
+  font-weight: bold;
+  margin: 2.5rem;
+
+}
+
+#btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  font-size: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  margin: 2.5rem;
+
+
+}
+#btn:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+/* .images{
+  background-image: url("images/BackgroundImages.jpg");
+  background-color: #cccccc;
+  height: 1024px;;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: none;
+} */
+
+#result {
+  /* min-height: 100%;
+  min-width: 100px; */
+
+  background-image: url("images/BackgroundImages.png");
+  height: 1000px;;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  /* opacity:  0.5; */
+  /* margin: 1rem auto; */
+  /* border-radius: 20px; */
+  font-size: 30px;
+  text-align: center;
+  color: #142850;
+  display: none;
+padding: 5rem;
+}
+
+.gameover{
+  margin: 2.5rem;
+
+}

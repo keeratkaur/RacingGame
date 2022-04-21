@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Racing Car</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="game">
+    <div id="blueCar">
+      <img src="images/blue.png" alt="Competitive Car">
+    </div>
+
+    <div id="RacingCar">
+      <img src="images/race.png" alt="Your Car">
+    </div>
+  </div>
+
+  <div id="result">
+    <!-- <img src="images/BackgroundImages.jpg" alt="Game over Image"> -->
+    <h1 class="gameover"> Game Over ..!! </h1>
+    <p id="score"></p>
+    <button type="button" name="button" id="btn" onclick="location.reload()">Restart</button>
+    <!-- </img> -->
+  </div>
+
+  <audio id="mainsound" src="audio\mainsound.wav">
+  </audio>
+    <audio id="clashsound" src="audio\clashsound.wav">
+    </audio>
+    <script type="text/javascript" src="index.js">
+    </script>
+
+</body>
+
+</html>
